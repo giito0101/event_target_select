@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mouseover/mouseoutとmouseenter/mouseleaveの違い</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div class="console" id='console_1'>
+                    <ul>
+                        <li id="target_select"><a href="#target_select">target_select</a></li>
+                        <input type="hidden" name="hidden1" id="hidden1" value="">
+                        <li id="event_select"><a href="#event_select">event_select</a></li>
+                        <input type="hidden" name="hidden2" value="">
+                    </ul>
+                    <div id="target_select_toggle">
+                      <ul>
+                        <li><a href="#target">target</a></li>
+                        <li><a href="#relatedTarget">relatedTarget</a></li>
+                        <li><a href="#currentTarget">currentTarget</a></li>
+                      </ul>
+                    </div>
+                    <div id="event_select_toggle">
+                      <ul>
+                        <li><a href="#mouseover">mouseover</a></li>
+                        <li><a href="#mouseout">mouseout</a></li>
+                        <li><a href="#mouseenter">mouseenter</a></li>
+                        <li><a href="#mouseleave">mouseleave</a></li>
+                      </ul>
+                    </div>
+                    <div id="output"></div>
+                </div>
+            </td>
+            <td>
+                <div class="square" id="square_1">
+                    <div class="square" id="square_2">
+                        <div class="square" id="square_3">
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
